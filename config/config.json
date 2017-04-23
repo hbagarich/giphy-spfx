@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/giphyRandom/GiphyRandomWebPart.js",
+      "manifest": "./src/webparts/giphyRandom/GiphyRandomWebPart.manifest.json",
+      "outputPath": "./dist/giphy-random.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "giphyRandomStrings": "webparts/giphyRandom/loc/{locale}.js"
+  }
+}

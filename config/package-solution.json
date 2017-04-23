@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "giphy-spfx-client-side-solution",
+    "id": "b3143530-6337-4d78-809d-32db66f2f960",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/giphy-spfx.sppkg"
+  }
+}

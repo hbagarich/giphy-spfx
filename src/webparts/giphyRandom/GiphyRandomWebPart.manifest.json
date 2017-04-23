@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "04f0d568-460b-4f8e-b022-4fce368170eb",
+  "alias": "GiphyRandomWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "04f0d568-460b-4f8e-b022-4fce368170eb",
+    "group": { "default": "Under Development" },
+    "title": { "default": "GiphyRandom" },
+    "description": { "default": "Get a random giphy gif based on search query" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "GiphyRandom"
+    }
+  }]
+}
