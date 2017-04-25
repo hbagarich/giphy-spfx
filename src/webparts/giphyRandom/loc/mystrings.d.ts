@@ -1,7 +1,7 @@
 declare interface IGiphyRandomStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
-  DescriptionFieldLabel: string;
+  ListNameFieldLabel: string;
 }
 
 declare module 'giphyRandomStrings' {

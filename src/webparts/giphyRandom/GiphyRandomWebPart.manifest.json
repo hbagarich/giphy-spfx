@@ -14,7 +14,7 @@
     "description": { "default": "Get a random giphy gif based on search query" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "GiphyRandom"
+      "listName": ""
     }
   }]
 }

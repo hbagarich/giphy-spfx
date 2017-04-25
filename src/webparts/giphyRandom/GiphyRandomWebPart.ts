@@ -19,6 +19,7 @@ export default class GiphyRandomWebPart extends BaseClientSideWebPart<IGiphyRand
     const element: React.ReactElement<IGiphyRandomProps> = React.createElement(
       GiphyRandom,
       {
+        listName: this.properties.listName
       }
     );
 
@@ -48,8 +49,8 @@ export default class GiphyRandomWebPart extends BaseClientSideWebPart<IGiphyRand
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                PropertyPaneTextField('listName', {
+                  label: strings.ListNameFieldLabel
                 })
               ]
             }
