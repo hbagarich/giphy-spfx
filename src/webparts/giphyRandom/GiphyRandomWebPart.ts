@@ -6,6 +6,7 @@ import {
   IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
+import pnp from 'sp-pnp-js';
 
 import * as strings from 'giphyRandomStrings';
 import GiphyRandom from './components/GiphyRandom';
@@ -15,10 +16,9 @@ import { IGiphyRandomWebPartProps } from './IGiphyRandomWebPartProps';
 export default class GiphyRandomWebPart extends BaseClientSideWebPart<IGiphyRandomWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IGiphyRandomProps > = React.createElement(
+    const element: React.ReactElement<IGiphyRandomProps> = React.createElement(
       GiphyRandom,
       {
-        description: this.properties.description
       }
     );
 
@@ -27,6 +27,14 @@ export default class GiphyRandomWebPart extends BaseClientSideWebPart<IGiphyRand
 
   protected get dataVersion(): Version {
     return Version.parse('1.0');
+  }
+
+  public onInit(): Promise<void> {
+    return super.onInit().then(_ => {
+      pnp.setup({
+        spfxContext: this.context
+      });
+    });
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
